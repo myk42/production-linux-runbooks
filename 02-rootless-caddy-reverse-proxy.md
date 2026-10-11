@@ -4,7 +4,7 @@
 | ------------------------ | ------------------------------ |
 | Target Platform          | Red Hat Enterprise Linux 10.x  |
 | Validated Platform       | AlmaLinux 10.2 (Lavender Lion) |
-| Validation Date          | 2026-10-09                     |
+| Validation Date          | 2026-10-11                     |
 
 ---
 
@@ -148,7 +148,7 @@ printf '%s\n' \
 '' \
 'NoNewPrivileges=true' \
 'DropCapability=ALL' \
-'AddCapability=NET_BIND_SERVICE' \
+'AddCapability=CAP_NET_BIND_SERVICE' \
 '' \
 'PublishPort=8080:80/tcp' \
 'PublishPort=8443:443/tcp' \
