@@ -146,6 +146,10 @@ printf '%s\n' \
 'ContainerName=caddy' \
 'Image=docker.io/library/caddy:2.11.7-alpine' \
 '' \
+'NoNewPrivileges=true' \
+'DropCapability=ALL' \
+'AddCapability=NET_BIND_SERVICE' \
+'' \
 'PublishPort=8080:80/tcp' \
 'PublishPort=8443:443/tcp' \
 'PublishPort=8443:443/udp' \
